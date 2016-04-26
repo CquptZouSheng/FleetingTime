@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/history"
+            android:icon="@drawable/history"
+            android:title="那些年" />
+        <item
+            android:id="@+id/committee"
+            android:icon="@drawable/committee"
+            android:title="噫...班委" />
+        <item
+            android:id="@+id/honor"
+            android:icon="@drawable/honor"
+            android:title="各种传说" />
+        <item
+            android:id="@+id/picture"
+            android:icon="@drawable/picture"
+            android:title="污の皂片"
+            />
+    </group>
+
+    <item android:title="无关紧要的一点东西^O^">
+        <menu>
+            <item
+                android:id="@+id/copyright"
+                android:icon="@drawable/copyright"
+                android:title="孤的版权" />
+        </menu>
+    </item>
+</menu>
