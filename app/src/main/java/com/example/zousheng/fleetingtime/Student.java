@@ -16,31 +16,16 @@ public class Student {
         return name;
     }
 
-    public void setName(String name) {
-        this.name = name;
-    }
-
     public String getNumber() {
         return number;
-    }
-
-    public void setNumber(String number) {
-        this.number = number;
     }
 
     public String getTelephone() {
         return telephone;
     }
 
-    public void setTelephone(String telephone) {
-        this.telephone = telephone;
-    }
-
     public String getQq() {
         return qq;
     }
 
-    public void setQq(String qq) {
-        this.qq = qq;
-    }
 }

@@ -27,9 +27,9 @@ public class MainActivity extends AppCompatActivity
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_information);
-       /* InitDatas.initDatas(mDatas);
-        initView();*/
+        setContentView(R.layout.activity_main);
+        InitDatas.initDatas(mDatas);
+        initView();
     }
     private void initView(){
         Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
@@ -42,7 +42,7 @@ public class MainActivity extends AppCompatActivity
         NavigationView navigationView = (NavigationView) findViewById(R.id.nav_view);
         navigationView.setNavigationItemSelectedListener(this);
         mRecyclerView= (RecyclerView) findViewById(R.id.list);
-        mAdapter=new StudentAdapter(mDatas);
+        mAdapter=new StudentAdapter(mDatas,MainActivity.this);
         mRecyclerView.setAdapter(mAdapter);
         mRecyclerView.setLayoutManager(new LinearLayoutManager(this));
     }
